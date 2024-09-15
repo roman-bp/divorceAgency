@@ -1,71 +1,101 @@
-<!DOCTYPE html>
+
+html_content = """<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Агентство з розлучень</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Агентство з розлучень</h1>
+        <div class="container">
+            <div class="logo">
+                <h1>Агентство з розлучень</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#testimonials">Відгуки</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">Про нас</a></li>
-                <li><a href="#services">Послуги</a></li>
-                <li><a href="#testimonials">Відгуки</a></li>
-                <li><a href="#contact">Контакти</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
         <section id="welcome">
-            <h2>Ласкаво просимо до Агентства з розлучень</h2>
-            <p>Ми пропонуємо професійну підтримку у складні моменти життя. Наші послуги розроблені, щоб допомогти вам на кожному етапі.</p>
+            <div class="container">
+                <h2>Професійна допомога у складних життєвих ситуаціях</h2>
+                <p>Розлучення, підписання шлюбного договору, розподіл майна в шлюбі чи після розлучення, визначення порядку спілкування з дітьми, стягнення аліментів – ми готові допомогти вам на кожному етапі.</p>
+                <a href="#services" class="btn">Дізнатися більше</a>
+            </div>
         </section>
 
         <section id="services">
-            <h2>Наші послуги</h2>
-            <div class="service-card">
-                <h3>Консультація</h3>
-                <p>Отримайте експертну пораду щодо процесу розлучення.</p>
+            <div class="container">
+                <h2>Наші послуги</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <h3>Розлучення та сімейне право</h3>
+                        <p>Ми надаємо повний спектр послуг, пов'язаних із розлученням, шлюбними договорами, розподілом майна та аліментами.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Психологічна підтримка</h3>
+                        <p>Наші юристи не лише надають юридичні послуги, але й допомагають вам подолати емоційні переживання у складних життєвих ситуаціях.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Консультації та вирішення конфліктів</h3>
+                        <p>Ми використовуємо сучасні техніки, такі як коучинг та розстановки, для вирішення конфліктів у будь-яких сферах відносин.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Кримінальні та адміністративні справи</h3>
+                        <p>Надаємо послуги у кримінальних справах, а також у питаннях адміністративного та господарського права.</p>
+                    </div>
+                </div>
             </div>
-            <div class="service-card">
-                <h3>Юридична підтримка</h3>
-                <p>Ми забезпечуємо юридичний супровід на всіх етапах.</p>
-            </div>
-            <div class="service-card">
-                <h3>Медіація</h3>
-                <p>Допомагаємо досягти справедливих угод між сторонами.</p>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Про нас</h2>
+                <p>Наше агентство надає комплексні юридичні послуги, орієнтовані на вирішення особистих і сімейних конфліктів. Юрист у нашій команді — це не тільки професіонал, але й психолог, який розуміє емоційні аспекти кожної ситуації.</p>
             </div>
         </section>
 
         <section id="testimonials">
-            <h2>Відгуки клієнтів</h2>
-            <div class="testimonial">
-                <p>"Команда Агентства з розлучень зробила важкий період набагато легшим. Їхні поради були безцінними."</p>
-                <span>- Ольга К.</span>
-            </div>
-            <div class="testimonial">
-                <p>"Професійно, чуйно та ефективно. Дуже рекомендую."</p>
-                <span>- Іван Д.</span>
+            <div class="container">
+                <h2>Відгуки клієнтів</h2>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"Команда Агентства з розлучень зробила важкий період набагато легшим. Їхні поради були безцінними."</p>
+                        <span>- Ольга К.</span>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Професійно, чуйно та ефективно. Дуже рекомендую."</p>
+                        <span>- Іван Д.</span>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer id="contact">
-        <h2>Контакти</h2>
-        <form>
-            <input type="text" placeholder="Ваше ім'я" required>
-            <input type="email" placeholder="Ваш email" required>
-            <textarea placeholder="Ваше повідомлення" required></textarea>
-            <button type="submit">Надіслати повідомлення</button>
-        </form>
-        <p>&copy; 2024 Агентство з розлучень. Всі права захищені.</p>
+        <div class="container">
+            <h2>Зв'яжіться з нами</h2>
+            <p>Запис на консультацію та отримання більш детальної інформації про послуги можливі за телефоном або через форму зворотного зв'язку.</p>
+            <form>
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="email" placeholder="Ваш email" required>
+                <textarea placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit">Надіслати повідомлення</button>
+            </form>
+            <p>&copy; 2024 Агентство з розлучень. Всі права захищені.</p>
+        </div>
     </footer>
 </body>
 </html>
+"""

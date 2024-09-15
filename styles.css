@@ -1,30 +1,40 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
+
+css_content = """/* Загальні стилі */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-    background-color: #4a90e2;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background: linear-gradient(90deg, #4a90e2, #76c7c0);
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .logo h1 {
-    margin: 0;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    justify-content: flex-end;
 }
 
 nav ul li {
@@ -34,83 +44,104 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffe066;
 }
 
 main {
-    padding: 20px;
-    text-align: center;
-}
-
-section {
-    margin-bottom: 40px;
+    padding: 40px 20px;
+    background-color: #f3f9ff;
 }
 
 #services {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+#services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.service-cards {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .service-card {
-    background-color: #fff;
+    background-color: #f9f9f9;
     padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .service-card h3 {
     color: #4a90e2;
+    margin-bottom: 15px;
 }
 
 #testimonials {
     background-color: #f0f8ff;
-    padding: 40px;
+    padding: 60px 0;
+}
+
+#testimonials h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
 }
 
 .testimonial {
-    margin-bottom: 20px;
+    width: 45%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.testimonial span {
-    display: block;
-    margin-top: 10px;
+.testimonial:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
     font-style: italic;
+    color: #555;
 }
 
 footer {
     background-color: #333;
     color: white;
-    padding: 40px 20px;
+    padding: 60px 0;
+}
+
+footer h2 {
     text-align: center;
-}
-
-footer form {
-    margin-bottom: 20px;
-}
-
-footer input, footer textarea {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-footer button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #4a90e2;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer button:hover {
-    background-color: #357ab8;
-}
-
-footer p {
-    margin-top: 20px;
-}
+    margin-bottom:}
