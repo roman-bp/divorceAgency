@@ -1,4 +1,4 @@
-/* Загальні стилі */
+/* Общие стили */
 * {
     margin: 0;
     padding: 0;
@@ -19,15 +19,19 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, #4a90e2, #76c7c0);
+    background: #34495E; /* Серо-синий */
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .logo h1 {
+    color: #E74C3C; /* Красный */
+    font-size: 55px;
+    font-weight: 900;
+}
+
+header .logo h2 {
     color: white;
-    font-size: 28px;
-    font-weight: 600;
 }
 
 nav ul {
@@ -49,7 +53,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffe066;
+    color: #E74C3C; /* Красный */
 }
 
 main {
@@ -68,7 +72,7 @@ main {
 #services h2 {
     font-size: 32px;
     margin-bottom: 40px;
-    color: #333;
+    color: #34495E; /* Серо-синий */
 }
 
 .service-cards {
@@ -94,19 +98,19 @@ main {
 }
 
 .service-card h3 {
-    color: #4a90e2;
+    color: #E74C3C; /* Красный */
     margin-bottom: 15px;
 }
 
 #testimonials {
-    background-color: #f0f8ff;
+    background-color: #34495E; /* Серо-синий */
     padding: 60px 0;
 }
 
 #testimonials h2 {
     font-size: 32px;
     margin-bottom: 40px;
-    color: #333;
+    color: #E74C3C; /* Красный */
     text-align: center;
 }
 
@@ -136,7 +140,7 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #34495E; /* Серо-синий */
     color: white;
     padding: 60px 0;
 }
@@ -171,7 +175,7 @@ footer form textarea {
 
 footer form button {
     padding: 10px 20px;
-    background-color: #4a90e2;
+    background-color: #E74C3C; /* Красный */
     color: white;
     border: none;
     border-radius: 5px;
@@ -181,7 +185,7 @@ footer form button {
 }
 
 footer form button:hover {
-    background-color: #3a78c2;
+    background-color: #C0392B; /* Темный красный */
 }
 
 /* Адаптивные стили */
