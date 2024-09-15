@@ -1,5 +1,4 @@
-
-css_content = """/* Загальні стилі */
+/* Загальні стилі */
 * {
     margin: 0;
     padding: 0;
@@ -144,4 +143,71 @@ footer {
 
 footer h2 {
     text-align: center;
-    margin-bottom:}
+    margin-bottom: 40px;
+}
+
+footer p {
+    text-align: center;
+    color: #bbb;
+    margin-top: 20px;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer form input,
+footer form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+footer form button {
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+footer form button:hover {
+    background-color: #3a78c2;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
